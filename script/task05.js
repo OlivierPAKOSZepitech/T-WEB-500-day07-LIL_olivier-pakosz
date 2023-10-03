@@ -21,7 +21,7 @@ const bouton_pause = document.querySelector("footer div button:nth-child(1)");
 const bouton_stop = document.querySelector("footer div button:nth-child(2)");
 const bouton_mute = document.querySelector("footer div button:nth-child(3)");
 const bouton_play = document.querySelector("footer div canvas");
-const audioPlayer = new Audio("../Traction.mp3");
+const audioPlayer = new Audio("../Legends.mp3");
 
 bouton_play.addEventListener("click", () => {
   audioPlayer.play();
