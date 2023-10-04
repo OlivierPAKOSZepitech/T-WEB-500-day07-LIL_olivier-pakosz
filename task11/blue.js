@@ -1,16 +1,16 @@
 const ps = document.querySelectorAll("p");
 
-ps.forEach((p) => {
+const addClass = () => ps.forEach((p) => {
   p.addEventListener("click", () => {
-    if (p.classList.contains("highlighted")) p.classList.remove("highlighted");
-    else if (!p.classList.contains("highlighted"))
-      p.classList.add("highlighted");
+    p.classList.toggle("highlighted");
   });
   p.addEventListener("mouseover", () => {
-    p.style.backgroundColor = "blue";
+    p.classList.add('blue');
   });
 
   p.addEventListener("mouseout", () => {
-    p.style.backgroundColor = "";
+    p.classList.remove('blue');
   });
 });
+
+addClass()
